@@ -5,16 +5,29 @@
   background: #eee;
 
   .sidebar,
-  .main { padding: 10px; }
+    .main { padding: 10px; }
 
-  .main {
-    margin-left: 220px;
-    min-height: 100vh;
-    border-left: 2px solid #333;
-  }
+    .main {
+      margin-left: 220px;
+      min-height: 100vh;
+      border-left: 2px solid #333;
+    }
 
-  .sidebar {
-    width: 200px;
-    float: left;
+    .sidebar {
+      width: 200px;
+      float: left;
+    }
+
+  &.right-nav{
+    .main {
+      margin-left: 0;
+      margin-right: 220px;
+      border-left: none;
+      border-right: 2px solid #333;
+    }
+
+    .sidebar {
+      float: right;
+    }
   }
 }
