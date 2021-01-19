@@ -1,3 +1,14 @@
 @mixin range-thumb() {
- 
+    &::-moz-range-thumb {
+        @content;
+    }
+
+    &::-ms-thumb {
+        @content;
+    }
+}
+
+@mixin range-track() {
+   
+    @content;
 }
